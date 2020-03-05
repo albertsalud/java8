@@ -3,7 +3,7 @@ package com.albertsalud.spring.basics;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Main {
+public class BasicsMain {
 	
 	public static void main(String[] args) {
 		
