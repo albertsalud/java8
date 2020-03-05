@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="helloWorld" class="com.albertsalud.spring.basics.HelloWorld">
+		<property name="message" value="Hola desde beans.xls" />
+	</bean>
+
+	<bean id="helloWorld2" class="com.albertsalud.spring.basics.HelloWorld">
+		<constructor-arg name="message" value="Hola desde constructor" />
+	</bean>
+	
+	<bean id="helloWorldPrinter" class="com.albertsalud.spring.basics.HelloWorldPrinter">
+		<property name="helloWorld" ref="helloWorld"></property>
+	</bean>
+</beans>
