@@ -1,4 +1,4 @@
-package com.albertsalud.spring.annotations;
+package com.albertsalud.spring.javaconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
