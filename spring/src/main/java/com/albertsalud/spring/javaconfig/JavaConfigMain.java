@@ -9,6 +9,9 @@ public class JavaConfigMain {
 		
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
+		HelloWorld hw = appContext.getBean(HelloWorld.class);
+		System.out.println(hw.greet());
+		
 		HelloWorldPrinter printer = appContext.getBean(HelloWorldPrinter.class);
 		
 		printer.print();

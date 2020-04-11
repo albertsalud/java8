@@ -12,7 +12,7 @@ public class HelloWorldPrinter {
 	private HelloWorld helloWorld;
 	
 	public void print() {
-		System.out.println(this.helloWorld.greet());
+		System.out.println("HelloWorldPrinter: " + this.helloWorld.greet());
 	}
 
 }
